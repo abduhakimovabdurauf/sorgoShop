@@ -9,8 +9,7 @@
                     <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                 </div>
                 <div
-                    class="md:w-1/2 flex items-center justify-center p-4 
-                            bg-no-repeat bg-[url('/pattern.png')] "
+                    class="md:w-1/2 flex items-center justify-center p-4"
                     >
                     <img src="/1.png" alt="Classic L06 Broom" class="max-h-64 object-contain" />
                 </div>

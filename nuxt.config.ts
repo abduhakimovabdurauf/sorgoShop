@@ -14,8 +14,7 @@ export default defineNuxtConfig({
       { code: 'ru', name: 'Русский', file: 'ru.ts' },
       { code: 'en', name: 'English', file: 'en.ts' }
     ],
-    lazy: true,
-    langDir: 'locales/',
+    lazy: false,
     defaultLocale: 'ru',
     strategy: 'no_prefix',
     vueI18n: './i18n.config.ts',
