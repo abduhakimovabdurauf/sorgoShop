@@ -9,11 +9,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
   i18n: {
-    locales: [
-      { code: 'uz', name: 'Oʻzbekcha', file: 'uz.ts' },
-      { code: 'ru', name: 'Русский', file: 'ru.ts' },
-      { code: 'en', name: 'English', file: 'en.ts' }
-    ],
     lazy: false,
     defaultLocale: 'ru',
     strategy: 'no_prefix',
