@@ -3,6 +3,8 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   devtools: { enabled:false },
+  ssr: true,
+  target: 'static',
   modules: [
     '@pinia/nuxt',
     '@nuxt/image',
