@@ -20,6 +20,14 @@ export default {
     offer2: "RAW MATERIAL SUPPLY",
     offer3: "WIDE SELECTION",
     offer4: "EXPORT TO CIS COUNTRIES",
+  },
+  advantagesSection: {
+    title: "OUR COMPETITIVE ADVANTAGES",
+    advantage1: "HIGH\nQUALITY",
+    advantage2: "FAST\nORDER\nPROCESSING",
+    advantage3: "OVER 20 TYPES\nOF PRODUCTS",
+    advantage4: "CUSTOM\nDESIGN",
   }
+
 
 }

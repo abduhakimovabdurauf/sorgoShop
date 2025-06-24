@@ -20,5 +20,13 @@ export default {
     offer2: "XOM ASHYONI YETKAZIB BERISH",
     offer3: "KENG TANLOV",
     offer4: "MDH MAMLAKATLARIGA EKSPORT",
+  },
+  advantagesSection: {
+    title: "BIZNING RAQOBATDOSH AFZALLIKLARIMIZ",
+    advantage1: "YUQORI\nSIFAT",
+    advantage2: "TEZKOR\nBUYURTMA\nRASMIYLASHTIRISH",
+    advantage3: "20 DAN ORTIQ\nMAHSULOT TURLARI",
+    advantage4: "INDIVIDUAL\nDIZAYN",
   }
+
 }
