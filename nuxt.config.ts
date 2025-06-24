@@ -1,10 +1,7 @@
 // nuxt.config.ts
 import { defineNuxtConfig } from 'nuxt/config'
-
 export default defineNuxtConfig({
   devtools: { enabled:false },
-  ssr: true,
-  target: 'static',
   modules: [
     '@pinia/nuxt',
     '@nuxt/image',
@@ -13,12 +10,12 @@ export default defineNuxtConfig({
   ],
   i18n: {
     locales: [
-      { code: 'uz', name: 'Oʻzbekcha', file: 'uz.ts' },
-      { code: 'ru', name: 'Русский', file: 'ru.ts' },
-      { code: 'en', name: 'English', file: 'en.ts' }
+      { code: 'uz', name: 'Oʻzbekcha', file: 'uz.js' },
+      { code: 'ru', name: 'Русский', file: 'ru.js' },
+      { code: 'en', name: 'English', file: 'en.js' }
     ],
     lazy: false,
-    langDir: 'locales/',
+    langDir: 'locales',
     defaultLocale: 'ru',
     strategy: 'no_prefix',
     vueI18n: './i18n.config.ts',

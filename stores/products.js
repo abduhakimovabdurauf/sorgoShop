@@ -13,7 +13,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip. 2-tikuvli. Mini.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить. 2-х прошивной. Мини.'
         },
-        imagePath: '/assets/images/products/M01.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/1.png'
       },
       {
         id: 'M02',
@@ -27,7 +27,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip; sifatli polietilen plyonka. 3-nurlik. Kichik.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить; качественная полиэтиленовая пленка. 3-х лучевой. Маленький.'
         },
-        imagePath: '/assets/images/products/M02.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/2.png'
       },
       {
         id: 'M03',
@@ -41,7 +41,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip. 2-tikuvli. Kichik.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить. 2-х прошивной. Маленький.'
         },
-        imagePath: '/assets/images/products/M03.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/3.png'
       },
       {
         id: 'M04',
@@ -55,7 +55,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip; sifatli polietilen plyonka. 3-tikuvli. Kichik.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить; качественная полиэтиленовая пленка. 3-х прошивной. Маленький.'
         },
-        imagePath: '/assets/images/products/M04.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/4.png'
       },
       {
         id: 'M05',
@@ -69,7 +69,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip. 3-tikuvli. Standart.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить. 3-х прошивной. Стандарт.'
         },
-        imagePath: '/assets/images/products/M05.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/5.png'
       },
       {
         id: 'M06',
@@ -83,7 +83,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip. 5-tikuvli. Katta.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить. 5-ти прошивной. Большой.'
         },
-        imagePath: '/assets/images/products/M06.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/6.png'
       },
       {
         id: 'M07',
@@ -97,7 +97,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip. 6-tikuvli. Katta.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить. 6-ти прошивной. Большой.'
         },
-        imagePath: '/assets/images/products/M07.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/7.png'
       },
       {
         id: 'L01',
@@ -111,7 +111,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; sifatli po\'lat sim. 3-nurlik. Mini (Avtomobil uchun).',
           ru: 'Материалы: экологически чистый сорго; качественная стальная проволока. 3-х лучевой. Мини (Автомобильный).'
         },
-        imagePath: '/assets/images/products/L01.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/8.png'
       },
       {
         id: 'L02',
@@ -125,7 +125,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; sifatli po\'lat sim. 3-nurlik. Kichik.',
           ru: 'Материалы: экологически чистый сорго; качественная стальная проволока. 3-х лучевой. Маленький.'
         },
-        imagePath: '/assets/images/products/L02.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/9.png'
       },
       {
         id: 'L03',
@@ -139,7 +139,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; sifatli po\'lat sim. 5-nurlik. Kichik.',
           ru: 'Материалы: экологически чистый сорго; качественная стальная проволока. 5-ти лучевой. Маленький.'
         },
-        imagePath: '/assets/images/products/L03.jpg'
+        imagePath: '/products/10.jpg'
       },
       {
         id: 'L04',
@@ -153,7 +153,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; sifatli po\'lat sim; sifatli polietilen plyonka. 3-nurlik. Katta.',
           ru: 'Материалы: экологически чистый сорго; качественная стальная проволока; качественная полиэтиленовая пленка. 3-х лучевой. Большой.'
         },
-        imagePath: '/assets/images/products/L04.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/11.png'
       },
       {
         id: 'L05',
@@ -167,7 +167,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip. 4-nurlik. Katta.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить. 4-х лучевой. Большой.'
         },
-        imagePath: '/assets/images/products/L05.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/12.png'
       },
       {
         id: 'L06',
@@ -181,7 +181,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip; sifatli polietilen plyonka. 4-nurlik. Katta.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить; качественная полиэтиленовая пленка. 4-х лучевой. Большой.'
         },
-        imagePath: '/assets/images/products/L06.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/13.png'
       },
       {
         id: 'L07',
@@ -195,7 +195,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip; sifatli polietilen plyonka. 5-nurlik. Katta.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить; качественная полиэтиленовая пленка. 5-ти лучевой. Большой.'
         },
-        imagePath: '/assets/images/products/L07.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/14.png'
       },
       {
         id: 'A01',
@@ -209,7 +209,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip; sifatli polietilen plyonka. 3-tikuvli. 3-nurlik. Standart.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить; качественная полиэтиленовая пленка. 3-х прошивной. 3-х лучевой. Стандарт.'
         },
-        imagePath: '/assets/images/products/A01.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/15.png'
       },
       {
         id: 'A02',
@@ -223,7 +223,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip. LUX. 5-tikuvli. 3-nurlik. Standart.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить. LUX. 5-ти прошивной. 3-х лучевой. Стандарт.'
         },
-        imagePath: '/assets/images/products/A02.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/16.png'
       },
       {
         id: 'A03',
@@ -237,7 +237,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip. 5-tikuvli. 4-nurlik. Katta.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить. 5-ти прошивной. 4-х лучевой. Большой.'
         },
-        imagePath: '/assets/images/products/A03.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/17.png'
       },
       {
         id: 'A04',
@@ -251,7 +251,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip. 5-tikuvli. 3-nurlik.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить. 5-ти прошивной. 3-х лучевой.'
         },
-        imagePath: '/assets/images/products/A04.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/18.png'
       },
       {
         id: 'A05',
@@ -265,7 +265,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip; yog\'och dasta. 5-tikuvli. Katta.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить; деревянная палка. 5-ти прошивной. Большой.'
         },
-        imagePath: '/assets/images/products/A05.jpg' // Siz to'g'irlaysiz
+        imagePath: '/products/19.png'
       }
     ]
   })
