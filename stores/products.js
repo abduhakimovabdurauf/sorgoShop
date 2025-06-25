@@ -3,6 +3,7 @@ export const useProductStore = defineStore('product', {
     products: [
       {
         id: 'M01',
+        category: 'Standard',
         name: {
           en: 'Standard (M01)',
           uz: 'Standart (M01)',
@@ -17,6 +18,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'M02',
+        category: 'Standard',
         name: {
           en: 'Standard (M02)',
           uz: 'Standart (M02)',
@@ -31,6 +33,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'M03',
+        category: 'Standard',
         name: {
           en: 'Standard (M03)',
           uz: 'Standart (M03)',
@@ -45,6 +48,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'M04',
+        category: 'Standard',
         name: {
           en: 'Standard (M04)',
           uz: 'Standart (M04)',
@@ -59,6 +63,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'M05',
+        category: 'Standard',
         name: {
           en: 'Standard (M05)',
           uz: 'Standart (M05)',
@@ -73,6 +78,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'M06',
+        category: 'Standard',
         name: {
           en: 'Standard (M06)',
           uz: 'Standart (M06)',
@@ -87,6 +93,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'M07',
+        category: 'Standard',
         name: {
           en: 'Standard (M07)',
           uz: 'Standart (M07)',
@@ -101,6 +108,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'L01',
+        category: 'Classic',
         name: {
           en: 'Classic (L01)',
           uz: 'Klassik (L01)',
@@ -115,6 +123,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'L02',
+        category: 'Classic',
         name: {
           en: 'Classic (L02)',
           uz: 'Klassik (L02)',
@@ -129,6 +138,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'L03',
+        category: 'Classic',
         name: {
           en: 'Classic (L03)',
           uz: 'Klassik (L03)',
@@ -143,6 +153,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'L04',
+        category: 'Classic',
         name: {
           en: 'Classic (L04)',
           uz: 'Klassik (L04)',
@@ -157,6 +168,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'L05',
+        category: 'Classic',
         name: {
           en: 'Classic (L05)',
           uz: 'Klassik (L05)',
@@ -171,6 +183,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'L06',
+        category: 'Classic',
         name: {
           en: 'Classic (L06)',
           uz: 'Klassik (L06)',
@@ -185,6 +198,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'L07',
+        category: 'Classic',
         name: {
           en: 'Classic (L07)',
           uz: 'Klassik (L07)',
@@ -199,6 +213,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'A01',
+        category: 'Lux',
         name: {
           en: 'Lux (A01)',
           uz: 'Lyuks (A01)',
@@ -213,6 +228,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'A02',
+        category: 'Lux',
         name: {
           en: 'Lux (A02)',
           uz: 'Lyuks (A02)',
@@ -227,6 +243,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'A03',
+        category: 'Lux',
         name: {
           en: 'Lux (A03)',
           uz: 'Lyuks (A03)',
@@ -241,6 +258,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'A04',
+        category: 'Lux',
         name: {
           en: 'Lux (A04)',
           uz: 'Lyuks (A04)',
@@ -255,6 +273,7 @@ export const useProductStore = defineStore('product', {
       },
       {
         id: 'A05',
+        category: 'Lux',
         name: {
           en: 'Lux (A05) Broom on a handle',
           uz: 'Lyuks (A05) Dasta bilan supurgi',
@@ -268,5 +287,11 @@ export const useProductStore = defineStore('product', {
         imagePath: '/products/19.png'
       }
     ]
-  })
+  }),
+  getters: {
+    getProductsByCategory: (state) => {
+      return (category) => state.products.filter(product => product.category === category);
+    }
+  }
+
 });

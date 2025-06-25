@@ -11,7 +11,7 @@
                 <div
                     class="md:w-1/2 flex items-center justify-center p-4"
                     >
-                    <img src="/1.png" alt="Classic L06 Broom" class="max-h-64 object-contain" />
+                    <NuxtImg src="/1.png" alt="Classic L06 Broom" class="max-h-64 object-contain" />
                 </div>
             </div>
 
@@ -21,7 +21,7 @@
                     <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                 </div>
                 <div class="md:w-1/2 flex items-center justify-center p-4">
-                    <img src="/2.png" alt="Lux AO2 Broom" class="max-h-64 object-contain">
+                    <NuxtImg src="/2.png" alt="Lux AO2 Broom" class="max-h-64 object-contain"/>
                 </div>
             </div>
 
@@ -31,7 +31,7 @@
                     <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                 </div>
                 <div class="md:w-1/2 flex items-center justify-center p-4">
-                    <img src="/3.png" alt="Lux AO3 Broom" class="max-h-64 object-contain">
+                    <NuxtImg src="/3.png" alt="Lux AO3 Broom" class="max-h-64 object-contain"/>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@
                     <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                 </div>
                 <div class="md:w-1/2 flex items-center justify-center p-4">
-                    <img src="/4.png" alt="Lux AO1 Broom" class="max-h-64 object-contain">
+                    <NuxtImg src="/4.png" alt="Lux AO1 Broom" class="max-h-64 object-contain"/>
                 </div>
             </div>
         </div>

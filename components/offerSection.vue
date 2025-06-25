@@ -21,7 +21,7 @@
 
         <div class="flex flex-col items-center p-4">
           <NuxtImg src="/offer4.jpg" alt="Экспорт в Страны СНГ" class="w-full h-106 object-cover mb-4"/>
-          <p class="text-lg font-semibold text-center">Э{{ t("offerSection.offer4") }}</p>
+          <p class="text-lg font-semibold text-center">{{ t("offerSection.offer4") }}</p>
         </div>
       </div>
     </div>
