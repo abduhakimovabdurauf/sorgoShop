@@ -31,10 +31,10 @@
       </div>
 
       <div class="space-y-2 text-white">
-        <div>{{ t('footer.menu.home') }}</div>
-        <div>{{ t('footer.menu.product') }}</div>
-        <div>{{ t('footer.menu.about') }}</div>
-        <div>{{ t('footer.menu.contact') }}</div>
+        <div><NuxtLink to="/">{{ t('footer.menu.home') }}</NuxtLink></div>
+        <div><NuxtLink to="/products">{{ t('footer.menu.product') }}</NuxtLink></div>
+        <div><NuxtLink to="/about">{{ t('footer.menu.about') }}</NuxtLink></div>
+        <div><NuxtLink to="/contact">{{ t('footer.menu.contact') }}</NuxtLink></div>
       </div>
 
       <div class="space-y-2 text-white">
