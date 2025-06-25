@@ -15,4 +15,11 @@ export default defineNuxtConfig({
     vueI18n: './i18n.config.ts',
     detectBrowserLanguage: false,
   },
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+      ]
+    }
+  }
 })

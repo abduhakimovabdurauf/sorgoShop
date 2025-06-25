@@ -42,8 +42,5 @@ useHead({
     },
     { name: 'twitter:image', content: '/background.jpg' },
   ],
-  link: [
-    { rel: 'icon', href: '/favicon.ico' },
-  ],
 })
 </script>
