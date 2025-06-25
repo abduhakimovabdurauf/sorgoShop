@@ -284,7 +284,7 @@ export const useProductStore = defineStore('product', {
           uz: 'Materiallar: ekologik toza jo\'xori; mustahkam polipropilen ip; yog\'och dasta. 5-tikuvli. Katta.',
           ru: 'Материалы: экологически чистый сорго; прочная полипропиленовая нить; деревянная палка. 5-ти прошивной. Большой.'
         },
-        imagePath: '/products/19.png'
+        imagePath: '/products/20.png'
       }
     ]
   }),
