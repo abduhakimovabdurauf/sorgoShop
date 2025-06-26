@@ -46,6 +46,21 @@
       </div>
     </div>
   </div>
+
+  <transition name="fade">
+    <div
+      v-if="showToast"
+      class="fixed top-6 right-6 bg-green-600 text-white px-6 py-4 rounded-xl shadow-2xl z-50 text-base font-semibold flex items-center gap-3"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+      </svg>
+      {{ $t('cart.added') }}
+    </div>
+  </transition>
+
+
+
 </template>
 
 <script setup>
@@ -54,7 +69,7 @@ import { useProductStore } from '@/stores/products'
 import { useCartStore } from '@/stores/cart'
 import { useI18n } from 'vue-i18n'
 import { computed, ref, onMounted, watch } from 'vue'
-
+const showToast = ref(false)
 const { locale } = useI18n()
 const route = useRoute()
 const productStore = useProductStore()
@@ -71,6 +86,10 @@ const decrease = () => {
 const addToCart = () => {
   if (product.value) {
     cartStore.addToCart(product.value, quantity.value)
+    showToast.value = true
+    setTimeout(() => {
+      showToast.value = false
+    }, 3000)
   }
 }
 onMounted(() => {
@@ -85,3 +104,11 @@ watch(
   { deep: true }
 )
 </script>
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+</style>

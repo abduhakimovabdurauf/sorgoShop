@@ -57,7 +57,20 @@ export default defineI18nConfig(() => ({
         emptyLine1: "Savat biroz xafa ko'rinadi...",
         emptyLine2: "Uni yangi xaridlar bilan quvontiring! 🛒",
         totalItems: "Jami mahsulotlar",
-        checkout: "Buyurtma berish"
+        checkout: "Buyurtma berish",
+        modalTitle: "Buyurtma ma'lumotlari",
+        name: "Ismingiz",
+        phone: "Telefon raqamingiz",
+        email: "Email manzilingiz",
+        namePlaceholder: "Ism kiriting",
+        phonePlaceholder: "*Ixtiyoriy",
+        emailPlaceholder: "Emailni kiriting",
+        cancel: "Bekor qilish",
+        confirm: "Buyurtma berish",
+        success: "Buyurtma muvaffaqiyatli yuborildi! Biz siz bilan bog'lanamiz!",
+        error: "Xatolik yuz berdi. Iltimos, keyinroq urinib ko‘ring.",
+        sending: 'Yuborilmoqda...',
+        added: 'Mahsulot savatga qo‘shildi!',
       },
       about: {
         title: "Biz haqimizda",
@@ -138,7 +151,20 @@ export default defineI18nConfig(() => ({
         emptyLine1: "Похоже, корзина немного грустит...",
         emptyLine2: "Порадуйте её новыми покупками! 🛒",
         totalItems: "Всего товаров",
-        checkout: "Оформить заказ"
+        checkout: "Оформить заказ",
+        modalTitle: "Информация о заказе",
+        name: "Ваше имя",
+        phone: "Ваш номер телефона",
+        email: "Ваш email",
+        namePlaceholder: "Введите имя",
+        phonePlaceholder: "*Необязательный",
+        emailPlaceholder: "Введите email",
+        cancel: "Отмена",
+        confirm: "Оформить заказ",
+        success: "Ваш заказ успешно отправлен! Мы свяжемся с вами!",
+        error: "Произошла ошибка. Пожалуйста, попробуйте позже.",
+        sending: 'Отправка...',
+        added: 'Товар добавлен в корзину!',
       },
       about: {
         title: "О нас",
@@ -151,15 +177,16 @@ export default defineI18nConfig(() => ({
         offerText: "Sorgo Trade предлагает широкий ассортимент веников: от автомобильных до хозяйственных моделей. Мы обеспечиваем стабильное качество, честные цены и индивидуальный подход. Наша миссия — создавать продукцию, которая сочетает в себе ручной труд и современные стандарты качества."
       },
       contact: {
-        title: 'Contact Us',
-        name: 'Your Name',
-        email: 'Email',
-        message: 'Your Message',
-        send: 'Send',
-        sending: 'Sending...',
-        success: 'Your message has been sent!',
-        error: 'Something went wrong. Please try again.'
+        title: 'Связаться с нами',
+        name: 'Ваше имя',
+        email: 'Электронная почта',
+        message: 'Ваше сообщение',
+        send: 'Отправить',
+        sending: 'Отправка...',
+        success: 'Ваше сообщение было отправлено!',
+        error: 'Что-то пошло не так. Пожалуйста, попробуйте снова.'
       }
+
 
 
     },
@@ -216,7 +243,20 @@ export default defineI18nConfig(() => ({
         emptyLine1: "Your cart looks a bit sad...",
         emptyLine2: "Cheer it up with some new items! 🛒",
         totalItems: "Total items",
-        checkout: "Proceed to Checkout"
+        checkout: "Proceed to Checkout",
+        modalTitle: "Order Information",
+        name: "Your Name",
+        phone: "Phone Number",
+        email: "Your Email",
+        namePlaceholder: "Enter name",
+        phonePlaceholder: "Optional",
+        emailPlaceholder: "Enter email",
+        cancel: "Cancel",
+        confirm: "Place Order",
+        success: "Your order has been successfully sent! We will contact you!",
+        error: "An error occurred. Please try again later.",
+        sending: 'Sending...',
+        added: 'Product added to cart!',
       },
       about: {
         title: "About Us",
