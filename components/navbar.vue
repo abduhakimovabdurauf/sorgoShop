@@ -9,11 +9,11 @@
         <!-- Language button -->
         <button type="button" data-dropdown-toggle="language-dropdown-menu"
           class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100">
-          <NuxtImg src="/globe.svg" height="25" width="25" />
+          <NuxtImg src="/globe.svg" alt="lang-switcher" height="25" width="25" />
         </button>
         <NuxtLink to="/cart"
           class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100">
-          <NuxtImg src="/cart.svg" height="25" width="25" />
+          <NuxtImg src="/cart.svg" alt="CartPage" height="25" width="25" />
         </NuxtLink>
 
         <!-- Dropdown -->
