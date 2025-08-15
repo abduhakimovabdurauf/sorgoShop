@@ -16,28 +16,53 @@ export default defineI18nConfig(() => ({
         uzbek: 'O‘zbekcha',
         openMenu: 'Menyuni ochish',
       },
+      vatchAll: 'Barchasini ko‘rish',
+      downloadCatalog: 'Katalogni yuklab olish',
       heroSection: {
-        text: "Sorgo Trade kompaniyasi supurgi va metlalar ishlab chiqarish bilan shug‘ullanadi. Barcha mahsulotlar ekologik toza sorgo o‘simligidan tayyorlanadi. Supalar uchun xomashyo sinchkovlik bilan tanlab olinadi va maksimal darajada tozalanadi. Ularni o‘rashda mustahkam sim va sintetik polipropilen iplardan foydalaniladi. Har bir supurgi qo‘lda tayyorlanadi va sifat nazorati bo‘yicha sinovdan o‘tkaziladi. Kompaniya mahsulotlarini MDH va Yevropa mamlakatlariga eksport qiladi. Sorgo Trade sizga quyidagilarni taklif etadi: keng assortiment, o‘z vaqtida yetkazib berish, sifat va narxda barqarorlik."
+        intro: "SORGO TRADE - O‘zbekistondagi eng yirik sorgo supurgilari ishlab chiqaruvchisi",
+        text: "Biz tabiiy sorgoni mustahkam va qulay supurgilarga aylantiramiz, ular sifati va ishonchliligi bilan qadrlanadi. 20 dan ortiq model, zamonaviy ishlab chiqarish, qo‘lda yig‘ish va qat’iy sifat nazorati — barchasi sizga kechikishlar va ortiqcha to‘lovlarsiz barqaror yetkazib berishni ta’minlash uchun. Biz MDH va Yevropaning 10 dan ortiq davlati bilan muvaffaqiyatli hamkorlik qilamiz, hamkorlarimizga foydali shartlar va barqaror sifatni kafolatlaymiz."
       },
+
       offerSection: {
-        title: "BIZ NIMALARNI TAKLIF QILAMIZ",
-        offer1: "SORGO YETISHTIRISH",
-        offer2: "XOM ASHYONI YETKAZIB BERISH",
-        offer3: "KENG TANLOV",
-        offer4: "MDH MAMLAKATLARIGA EKSPORT",
+        title: "BIZNING IMKONIYATLARIMIZ",
+        offer1: "Sorgo yetishtirish — O‘zimizga tegishli dalalar",
+        offer2: "Xomashyo yetkazib berish — Barqaror xomashyo ta’minoti",
+        offer3: "Katta tanlov — Keng assortiment",
+        offer4: "MDH mamlakatlariga eksport — MDH va Yevropaga eksport"
       },
       advantagesSection: {
-        title: "BIZNING RAQOBATDOSH AFZALLIKLARIMIZ",
-        advantage1: "YUQORI\nSIFAT",
-        advantage2: "TEZKOR\nBUYURTMA\nRASMIYLASHTIRISH",
-        advantage3: "20 DAN ORTIQ\nMAHSULOT TURLARI",
-        advantage4: "INDIVIDUAL\nDIZAYN",
+        title: "BIZNING RAQOBATDOSH USTUNLIKLARIMIZ",
+        advantage1: "Sifat kafolati",
+        advantage2: "Buyurtmani tezkor rasmiylashtirish",
+        advantage3: "20+ mahsulot modeli",
+        advantage4: "Mijozga mos individual dizayn"
+      },
+      bestSellers: {
+        title: "BIZNING MAHSULOTLARIMIZ",
+        1: {
+          name: "LUX A01",
+          desc: "LUX A01 «Balalayka» — uch qanotli, uch qator tikilgan klassik supurgi. Yillar davomida sinovdan o‘tgan an’anaviy shakl va avlodlar ishonchini qozongan ishonchli sifat."
+        },
+        2: {
+          name: "Classic L06",
+          desc: "Classic L06 — Markaziy Osiyo va ko‘plab mamlakatlar uchun an’anaviy simli klassik supurgi. To‘rt qanotli konstruksiya mustahkamlik va uzoq xizmat qilishni ta’minlaydi, shakli va materiali esa o‘n yilliklar davomida sinovdan o‘tgan."
+        },
+        3: {
+          name: "LUX A02",
+          desc: "LUX A02 — uch qanotli, uch qator tikilgan to‘g‘ri shaklli supurgi. Kundalik ishlatishda ham mustahkamligini va samaradorligini saqlaydi, qulay va amaliy."
+        },
+        4: {
+          name: "LUX A05",
+          desc: "LUX A05 — yog‘och (qarag‘ay) sopli besh qator tikilgan supurgi. Yuqori sifatli sorgodan tayyorlangan, uzoq muddat xizmat qiladi va ishlatishda qulay. Ko‘cha, hovli va katta ochiq maydonlarni supurish uchun ideal bo‘lib, mustahkamlikni tartibli va chiroyli ko‘rinish bilan uyg‘unlashtiradi."
+        }
       },
       footer: {
-        address: "O‘zbekiston, Toshkent, Zulfiya ko‘chasi 22",
-        contactTitle: "Siz bilan bog‘lanishimizni istaysizmi?",
-        emailPlaceholder: "Email manzilingiz",
+        address: "Namangan, Kosonsoy, Chorbog‘",
+        contactTitle: "Raqamingizni qoldiring va biz siz bilan bog'lanamiz",
+        emailPlaceholder: "Sizning telefon raqamingiz",
         send: "Yuborish",
+        sentSuccess: "Sizning xabaringiz yuborildi!",
+        error: "Xatolik yuz berdi. Qayta urinib ko‘ring.",
         menu: {
           home: "Bosh sahifa",
           product: "Mahsulotlar",
@@ -74,20 +99,16 @@ export default defineI18nConfig(() => ({
       },
       about: {
         title: "Biz haqimizda",
-        intro:
-          "Sorgo Trade – bu shunchaki korxona emas, balki tabiatga hurmat va tozalikka bo'lgan intilishning mujassamlanishidir. Biz ekologik toza jo'xori (sorgo) xomashyosidan tayyorlangan yuqori sifatli supurgi va metlalar ishlab chiqarishga ixtisoslashgan zamonaviy kompaniyamiz. Har bir mahsulotimiz tabiatning in'omidan kelib chiqqan holda, sizning uyingizga va atrof-muhitga tozalik olib kirish uchun yaratilgan. Sorgo Trade bilan siz nafaqat sifatli tozalash vositalarini, balki sayyoramizga g'amxo'rlik qilishning bir qismini ham qo'lga kiritasiz.",
+        intro: "Sorgo Trade — ekologik toza sorgodan supurgi va ko‘chalar supuradigan supurgilar ishlab chiqaruvchi zamonaviy kompaniya. Biz 2018-yildan beri faoliyat yuritamiz va an’ana hamda zamonaviy texnologiyalarni uyg‘unlashtirgan mahsulotlar taklif qilamiz.",
         productionTitle: "Ishlab chiqarish",
-        productionText:
-          "Mahsulotlarimiz har bir detallarga alohida e’tibor qaratilgan holda qo‘lda tayyorlanadi. Biz xom ashyoni sinchkovlik bilan tanlaymiz, uni chuqur tozalaymiz va faqat mustahkam po‘lat sim hamda yuqori sifatli polipropilen ipdan foydalanamiz.",
-        exportTitle: "Eksport va yetkazib berish",
-        exportText:
-          "Mahsulotlarimiz Rossiya, Qozog‘iston, Polsha kabi 10 dan ortiq MDH va Yevropa davlatlariga eksport qilinadi. Biz o‘z vaqtida yetkazib berish va ishonchli logistika tizimini kafolatlaymiz.",
-        offerTitle: "Biz sizga nimani taklif qilamiz",
-        offerText:
-          "Sorgo Trade sizga avtomobil uchun mini supurgilardan tortib, katta xo‘jalik supurgilarigacha keng assortimentni taklif etadi. Barqaror sifat, o‘z vaqtida yetkazib berish va halol narxlar — bu bizning ustuvor yo‘nalishimiz. Bizning maqsadimiz — qo‘lda mehnat va zamonaviy sifat standartlarini uyg‘unlashtirgan mahsulot yaratish."
+        productionText: "Biz sorgoni o‘z dalalarimizda yetishtiramiz, xom ashyoni sinchkovlik bilan tanlab, tozalaymiz. Supurgi to‘qishda ustalarning qo‘l mehnatini ham, zamonaviy uskunalarni ham qo‘llaymiz, bu esa aniq tikuv va yuqori mustahkamlikni ta’minlaydi. Bunday yondashuv an’anaviy sifatni saqlab qolish va ishlab chiqarish samaradorligini oshirishga yordam beradi.",
+        exportTitle: "Eksport",
+        exportText: "Mahsulotimiz Belarus, Rossiya, Ozarbayjon, Gruziya, Armaniston, Ukraina, Qozog‘iston, Tojikiston, Qirg‘iziston, Turkiya, Litva, Polsha va boshqa 10 dan ortiq davlatlarga yetkazib beriladi. Biz barqaror yetkazib berish, ishonchli logistika va har bir mijozga individual yondashuvni kafolatlaymiz.",
+        offerTitle: "Biz nima taklif qilamiz",
+        offerText: "Sorgo Trade avtomobil uchun supurgilardan tortib xo‘jalik supurgilarigacha keng assortimentni taklif qiladi. Biz barqaror sifat, halol narx va individual yondashuvni ta’minlaymiz. Bizning missiyamiz — qo‘l mehnati va zamonaviy sifat standartlarini birlashtirgan mahsulotlar yaratish."
       },
       contact: {
-        title: 'Aloqa',
+        title: 'Bog`lanish',
         name: 'Ismingiz',
         email: 'Email',
         message: 'Xabaringiz',
@@ -95,6 +116,11 @@ export default defineI18nConfig(() => ({
         sending: 'Yuborilmoqda...',
         success: 'Xabaringiz yuborildi!',
         error: 'Xatolik yuz berdi. Qayta urinib ko‘ring.'
+      },
+      contactSection: {
+        commonContact: "Umumiy aloqa",
+        generalDirector: "Muhammad Bobur — Bosh direktor",
+        manager: "Usmonxonov Xojiakbar - Manager",
       }
 
     },
@@ -110,28 +136,33 @@ export default defineI18nConfig(() => ({
         uzbek: 'Узбекский',
         openMenu: 'Открыть меню',
       },
+      vatchAll: 'Посмотреть все',
+      downloadCatalog: 'Скачать каталог',
       heroSection: {
-        text: "Компания Sorgo Trade занимается производством веников и метел. Вся продукция делается из экологически чистого растения Сорго.Сырьё для наших веников тщательно подбирается и максимальноочищается. Для плетение веников используется прочнаяпроволока и синтетическая полипропиленовая веник делается вручную и тщательно проходит проверку контроля качества. Компания СНГ и Европы. Sorgo Trade предлагает вам - большой ассортимент,своевремен-ную поставку без задержек, стабильность в качестве и в цене."
+        intro: "SORGO TRADE - Крупнейший производитель веников из сорго в Узбекистане",
+        text: "Мы превращаем натуральное сорго в долговечные и удобные веники, которые ценят за качество и надёжность. Более 20 моделей, современное производство, ручная сборка и строгий контроль качества — всё ради того, чтобы вы получали стабильные поставки без задержек и переплат. Мы успешно работаем с более чем 10 странами СНГ и Европы, обеспечивая нашим партнёрам выгодные условия и предсказуемое качество."
       },
       offerSection: {
-        title: "ЧТО МЫ ПРЕДЛАГАЕМ",
-        offer1: "ВЫРАЩИВАНИЕ СОРГО",
-        offer2: "ПОСТАВКА СЫРЬЯ",
-        offer3: "БОЛЬШОЙ ВЫБОР",
-        offer4: "ЭКСПОРТ В СТРАНЫ СНГ",
+        title: "НАШИ ВОЗМОЖНОСТИ",
+        offer1: "Выращивание сорго - Собственные поля",
+        offer2: "Поставка сырья - Стабильные поставки сырья",
+        offer3: "Большой выбор - большой ассортимент",
+        offer4: "Экспорт в страны СНГ - Экспорт в СНГ и Европу",
       },
       advantagesSection: {
         title: "НАШИ КОНКУРЕНТНЫЕ ПРЕИМУЩЕСТВА",
-        advantage1: "ВЫСОКОЕ\nКАЧЕСТВО",
-        advantage2: "БЫСТРОЕ\nОФОРМЛЕНИЕ\nЗАКАЗА",
-        advantage3: "БОЛЕЕ 20 ВИДОВ\nПРОДУКЦИИ",
-        advantage4: "ИНДИВИДУАЛЬНЫЙ\nДИЗАЙН",
+        advantage1: "Гарантия качества",
+        advantage2: "Быстрое оформление заказа",
+        advantage3: "20+ моделей продукции",
+        advantage4: "Индивидуальный дизайн под клиента",
       },
       footer: {
         address: "Узбекистан, Ташкент, улица Зульфия 22",
-        contactTitle: "Хотите, чтобы мы с вами связались?",
-        emailPlaceholder: "Ваш email адрес",
+        contactTitle: "Оставьте номер и мы свяжемся с вами",
+        emailPlaceholder: "Ваш номер телефона",
         send: "Отправить",
+        sentSuccess: "Ваше сообщение отправлено!",
+        error: "Что-то пошло не так. Пожалуйста, попробуйте ещё раз.",
         menu: {
           home: "Главная",
           product: "Продукты",
@@ -168,13 +199,32 @@ export default defineI18nConfig(() => ({
       },
       about: {
         title: "О нас",
-        intro: "Sorgo Trade – это не просто компания, а воплощение уважения к природе и стремления к чистоте. Мы являемся современным предприятием, специализирующимся на производстве высококачественных метел и щеток из экологически чистого соргового сырья. Каждый наш продукт, созданный природой, разработан для того, чтобы приносить чистоту в ваш дом и окружающую среду. С Sorgo Trade вы приобретаете не только качественные чистящие средства, но и становитесь частью заботы о нашей планете.",
+        intro: "Sorgo Trade — современный производитель веников и метёл из экологически чистого сорго. Мы работаем с 2018 года и предлагаем продукцию, которая сочетает традиции и новейшие технологии.",
         productionTitle: "Производство",
-        productionText: "Все изделия производятся вручную с особым вниманием к каждой детали. Мы тщательно отбираем сырьё, подвергаем его глубокой очистке и используем только прочную стальную проволоку и высококачественную полипропиленовую нить для плетения.",
-        exportTitle: "Экспорт и поставки",
-        exportText: "Продукция экспортируется более чем в 10 стран СНГ и Европы, включая Россию, Казахстан, Польшу и другие. Мы гарантируем своевременную поставку и надёжную логистику.",
+        productionText: "Мы выращиваем сорго на собственных полях, тщательно отбираем и очищаем сырьё. Для плетения используем как ручной труд мастеров, так и современное оборудование, обеспечивая точную прошивку и высокую прочность изделий. Такой подход позволяет сохранять традиционное качество и повышать производительность.",
+        exportTitle: "Экспорт",
+        exportText: "Наша продукция поставляется более чем в 10 стран, включая Белоруссию, Россию, Азербайджан, Грузию, Армению, Украину, Казахстан, Таджикистан, Киргизию, Турцию, Литву, Польшу  и другие. Мы гарантируем стабильные поставки, надёжную логистику и индивидуальный подход к каждому клиенту.",
         offerTitle: "Что мы предлагаем",
         offerText: "Sorgo Trade предлагает широкий ассортимент веников: от автомобильных до хозяйственных моделей. Мы обеспечиваем стабильное качество, честные цены и индивидуальный подход. Наша миссия — создавать продукцию, которая сочетает в себе ручной труд и современные стандарты качества."
+      },
+      bestSellers: {
+        title: "НАША ПРОДУКЦИЯ",
+        1:{
+          name: "LUX A01",
+          desc: "LUX A01 «Балалайка» — классический трёхлучевой, трёхпрошивной веник. Традиционная форма, проверенная годами, и надёжное качество, которому доверяют поколениями"
+        },
+        2:{
+          name: "Classic L06",
+          desc: "Classic L06 — традиционный для Средней Азии и многих стран классический веник с проволокой. Четырёхлучевая конструкция обеспечивает прочность и долговечность, а форма и материалы проверены десятилетиями использования."
+        },
+        3:{
+          name: "LUX A02",
+          desc: "LUX A02 — трёхлучевой, трёхпрошивной веник с прямой формо. Практичный и удобный в работе, сохраняет долговечность и эффективность при ежедневном использовании."
+        },
+        4:{
+          name: "LUX A05",
+          desc: "LUX A05 — пяти прошивная метла на деревянном черенке из сосны. Изготовлена из высокосортного сорго, долговечна и удобна в работе. Идеальна для подметания улиц, дворов и больших открытых площадок, сочетает прочность с аккуратным и эстетичным видом."
+        },
       },
       contact: {
         title: 'Связаться с нами',
@@ -185,6 +235,11 @@ export default defineI18nConfig(() => ({
         sending: 'Отправка...',
         success: 'Ваше сообщение было отправлено!',
         error: 'Что-то пошло не так. Пожалуйста, попробуйте снова.'
+      },
+      contactSection: {
+        commonContact: "Общая связь",
+        generalDirector: "Мухаммад Бобур — генеральный директор",
+        manager: "Усмонхонов Ходжиакбар - менеджер",
       }
 
 
@@ -202,28 +257,52 @@ export default defineI18nConfig(() => ({
         uzbek: 'Uzbek',
         openMenu: 'Open menu',
       },
+      vatchAll: 'View All',
+      downloadCatalog: 'Download Catalog',
       heroSection: {
-        text: "Sorgo Trade is engaged in the production of brooms and brushes. All products are made from the environmentally friendly sorghum plant. The raw materials for our brooms are carefully selected and thoroughly cleaned. Durable wire and synthetic polypropylene thread are used for weaving. Each broom is handmade and undergoes strict quality control. The company exports its products to CIS and European countries. Sorgo Trade offers you: a wide range of products, timely delivery without delays, and consistency in quality and pricing."
+        intro: "SORGO TRADE - The largest sorghum broom manufacturer in Uzbekistan",
+        text: "We transform natural sorghum into durable and convenient brooms valued for their quality and reliability. With over 20 models, modern production, handcrafted assembly, and strict quality control, we ensure stable deliveries without delays or overpayments. We successfully cooperate with more than 10 countries across the CIS and Europe, providing our partners with favorable terms and consistent quality."
       },
       offerSection: {
-        title: "WHAT WE OFFER",
-        offer1: "SORGHUM CULTIVATION",
-        offer2: "RAW MATERIAL SUPPLY",
-        offer3: "WIDE SELECTION",
-        offer4: "EXPORT TO CIS COUNTRIES",
+        title: "OUR CAPABILITIES",
+        offer1: "Sorghum cultivation — Our own fields",
+        offer2: "Raw material supply — Stable raw material deliveries",
+        offer3: "Wide selection — Large assortment",
+        offer4: "Export to CIS countries — Export to the CIS and Europe"
       },
       advantagesSection: {
         title: "OUR COMPETITIVE ADVANTAGES",
-        advantage1: "HIGH\nQUALITY",
-        advantage2: "FAST\nORDER\nPROCESSING",
-        advantage3: "OVER 20 TYPES\nOF PRODUCTS",
-        advantage4: "CUSTOM\nDESIGN",
+        advantage1: "Quality guarantee",
+        advantage2: "Fast order processing",
+        advantage3: "20+ product models",
+        advantage4: "Custom design tailored to the client"
+      },
+      bestSellers: {
+        title: "OUR PRODUCTS",
+        1: {
+          name: "LUX A01",
+          desc: "LUX A01 'Balalaika' — a classic three-strand, triple-stitched broom. A traditional shape tested over the years and reliable quality trusted by generations."
+        },
+        2: {
+          name: "Classic L06",
+          desc: "Classic L06 — a traditional wire broom common in Central Asia and many other countries. Its four-strand construction ensures durability and longevity, while its shape and materials have been proven over decades of use."
+        },
+        3: {
+          name: "LUX A02",
+          desc: "LUX A02 — a three-strand, triple-stitched broom with a straight shape. Practical and convenient to use, it maintains durability and efficiency even with daily use."
+        },
+        4: {
+          name: "LUX A05",
+          desc: "LUX A05 — a five-stitched broom with a pine wooden handle. Made from high-grade sorghum, it is durable and comfortable to work with. Ideal for sweeping streets, yards, and large open areas, combining strength with a neat and aesthetic appearance."
+        }
       },
       footer: {
-        address: "Uzbekistan, Tashkent, Zulfia Street 22",
-        contactTitle: "Would you like us to contact you?",
-        emailPlaceholder: "Your Email address",
+        address: "Namangan, Kosonsoy, Chorbog",
+        contactTitle: "Leave your number and we will contact you",
+        emailPlaceholder: "Your phone number",
         send: "Send",
+        sentSuccess: "Your message has been sent!",
+        error: "Something went wrong. Please try again.",
         menu: {
           home: "Home",
           product: "Product",
@@ -260,17 +339,13 @@ export default defineI18nConfig(() => ({
       },
       about: {
         title: "About Us",
-        intro:
-          "Sorgo Trade isn't just a company; it's the embodiment of respect for nature and a commitment to cleanliness. We are a modern enterprise specializing in the production of high-quality brooms and whisks made from eco-friendly sorghum raw material. Each of our products, born from nature's gift, is crafted to bring cleanliness to your home and the environment. With Sorgo Trade, you not only get quality cleaning tools but also become a part of caring for our planet.",
+        intro: "Sorgo Trade is a modern manufacturer of brooms and sweepers made from eco-friendly sorghum. Since 2018, we have been offering products that combine tradition with the latest technologies.",
         productionTitle: "Production",
-        productionText:
-          "Each product is handcrafted with great attention to detail. We carefully select and thoroughly clean the raw materials, using only strong steel wire and high-quality polypropylene thread.",
-        exportTitle: "Export and Delivery",
-        exportText:
-          "Our products are exported to more than 10 countries across the CIS and Europe, including Russia, Kazakhstan, and Poland. We guarantee timely delivery and a reliable logistics system.",
+        productionText: "We grow sorghum in our own fields, carefully selecting and cleaning the raw materials. For weaving, we use both skilled manual labor and modern equipment, ensuring precise stitching and high durability. This approach helps preserve traditional quality while increasing productivity.",
+        exportTitle: "Export",
+        exportText: "Our products are supplied to more than 10 countries, including Belarus, Russia, Azerbaijan, Georgia, Armenia, Ukraine, Kazakhstan, Tajikistan, Kyrgyzstan, Turkey, Lithuania, Poland, and others. We guarantee stable deliveries, reliable logistics, and an individual approach to each client.",
         offerTitle: "What We Offer",
-        offerText:
-          "Sorgo Trade offers a wide range of brooms — from compact car brooms to large household models. We ensure stable quality, punctual delivery, and fair pricing. Our mission is to combine traditional handcraftsmanship with modern quality standards."
+        offerText: "Sorgo Trade offers a wide range of brooms — from car brooms to household models. We ensure consistent quality, fair prices, and a personalized approach. Our mission is to create products that combine craftsmanship with modern quality standards."
       },
       contact: {
         title: 'Contact Us',
@@ -281,6 +356,11 @@ export default defineI18nConfig(() => ({
         sending: 'Sending...',
         success: 'Your message has been sent!',
         error: 'Something went wrong. Please try again.'
+      },
+      contactSection: {
+        commonContact: "Common Contact",
+        generalDirector: "Muhammad Bobur — General Director",
+        manager: "Usmonxonov Xojiakbar - Manager",
       }
     }
   }

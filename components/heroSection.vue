@@ -7,6 +7,7 @@
       <div class="max-w-lg flex flex-col md:flex-row">
         <!-- Matn qismi -->
         <div class="md:w-full p-4 text-left">
+          <h1 class="text-lg sm:text-xl font-bold text-gray-800 leading-relaxed">{{ t('heroSection.intro') }}</h1>
           <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
             {{ t('heroSection.text') }}
           </p>

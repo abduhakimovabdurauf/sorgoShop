@@ -1,6 +1,6 @@
 <template>
   <ClientOnly>
-    <div class="container mx-auto py-8 px-4 mt-24">
+    <div v-if="filteredProducts" class="container mx-auto py-8 px-4 mt-24">
 
       <!-- Category links -->
       <div class="flex gap-4 mb-6 mx-auto overflow-x-auto flex-nowrap">
@@ -11,8 +11,8 @@
             :class="[
             'px-3 sm:px-4 py-1.5 sm:py-2 text-sm sm:text-base rounded-md border transition whitespace-nowrap shrink-0',
             selectedCategory === cat.value
-                ? 'bg-gray-800 text-white'
-                : 'bg-white text-gray-600 hover:text-black border-gray-300'
+              ? 'bg-gray-800 text-white'
+              : 'bg-white text-gray-600 hover:text-black border-gray-300'
             ]"
         >
             {{ cat.label }}
@@ -23,12 +23,12 @@
            <NuxtLink :to="`/slug/${product.id}`">
                 <div class="relative h-56 flex items-center border border-gray-500 justify-center p-4">
                     <NuxtImg
-                    :src="product.imagePath"
+                    :src="product?.images[0] || '/default-image.jpg'"
                     :alt="product.name"
                     class="max-h-full max-w-full object-contain"
                     />
                     <div
-                    v-if="!product.imagePath"
+                    v-if="!product.images.length"
                     class="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400 text-sm"
                     >
                     No Image
@@ -45,6 +45,18 @@
            </NuxtLink> 
         </div>
       </div>
+      <div class="flex justify-center mt-8 gap-4">
+        <button
+          @click="downloadPDF"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition"
+        >
+          {{ t('downloadCatalog') }}
+        </button>
+      </div>
+
+    </div>
+    <div v-else class="text-center text-gray-500 mt-8">
+      {{t('vatchAll')}}
     </div>
   </ClientOnly>
 </template>
@@ -55,15 +67,21 @@ import { computed, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const productStore = useProductStore();
-const { locale } = useI18n();
+const { t, locale } = useI18n();
 
 const selectedCategory = ref('all');
+const downloadPDF = () => {
+  const link = document.createElement('a');
+  link.href = '/catalog.pdf';
+  link.download = 'catalog.pdf';
+  link.click();
+}
 
 const categories = [
   { label: 'All', value: 'all' },
-  { label: 'Standard', value: 'Standard' },
-  { label: 'Classic', value: 'Classic' },
-  { label: 'Lux', value: 'Lux' }
+  { label: 'Standard', value: 'standart' },
+  { label: 'Classic', value: 'classic' },
+  { label: 'Lux', value: 'lux' }
 ];
 
 const filteredProducts = computed(() => {

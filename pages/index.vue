@@ -4,6 +4,7 @@
     <advantage-section></advantage-section>
     <best-sellers></best-sellers>
     <products></products>
+    <contact-section></contact-section>
 </template>
 
 <script setup lang="ts">

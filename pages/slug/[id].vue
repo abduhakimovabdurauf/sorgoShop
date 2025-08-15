@@ -1,15 +1,15 @@
 <template>
   <div class="container mx-auto p-4 md:p-8 lg:p-12 mt-16">
-    <div class="flex flex-col-reverse lg:flex-row bg-white overflow-hidden max-w-6xl mx-auto">
+    <div v-if="product" class="flex flex-col-reverse lg:flex-row bg-white overflow-hidden max-w-6xl mx-auto">
       <div class="w-full lg:w-1/2 p-6 md:p-8 lg:p-10 bg-[#2c3e50] flex flex-col justify-between">
         <div>
           <div class="relative inline-block mb-6 pr-10">
             <div class="bg-[#2c3e50] py-4 text-white font-semibold uppercase tracking-wider text-xl md:text-2xl">
-              {{ product.name[locale] }}
+              {{ product?.name[locale] }}
             </div>
           </div>
           <p class="text-white text-base md:text-xl leading-relaxed mb-8">
-            {{ product.description[locale] }}
+            {{ product?.description[locale] }}
           </p>
         </div>
         <div class="flex flex-col sm:flex-row items-center justify-between mt-auto pt-6 border-t border-gray-200">
@@ -42,9 +42,13 @@
         </div>
       </div>
       <div class="w-full lg:w-1/2 p-6 md:p-8 lg:p-10 flex items-center justify-center bg-gray-50">
-        <NuxtImg :src="product.imagePath" alt="Product Image" class="max-w-full h-auto" />
+        <NuxtImg :src="product?.images[0]" alt="Product Image" class="max-w-full h-auto" />
       </div>
     </div>
+
+    <!-- <div class="text-2xl text-center mt-30" v-else>
+      Mahsulot yuklanmoqda...
+    </div> -->
   </div>
 
   <transition name="fade">
@@ -74,10 +78,11 @@ const { locale } = useI18n()
 const route = useRoute()
 const productStore = useProductStore()
 const cartStore = useCartStore()
+const product = computed(() => productStore.getProductById(Number(route.params.id)))
+console.log(route.params.id);
+console.log(product.value);
+console.log('mahsulotlar: ',productStore.products);
 
-const product = computed(() =>
-  productStore.products.find((p) => p.id === route.params.id)
-)
 const quantity = ref(1)
 const increase = () => quantity.value++
 const decrease = () => {
@@ -92,9 +97,7 @@ const addToCart = () => {
     }, 3000)
   }
 }
-onMounted(() => {
-  cartStore.loadFromLocalStorage?.()
-})
+
 
 watch(
   () => cartStore.items,
