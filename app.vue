@@ -7,17 +7,17 @@
 <script setup>
 import { useCartStore } from '@/stores/cart'
 import { watch, onMounted } from 'vue'
-import { useProductStore } from './stores/products.js';
+// import { useProductStore } from './stores/products.js';
 const cartStore = useCartStore()
 
-const productStore = useProductStore();
-onMounted(async () => {
-  cartStore.loadFromLocalStorage?.()
+// const productStore = useProductStore();
+// onMounted(async () => {
+//   cartStore.loadFromLocalStorage?.()
 
-  if (!productStore.products.length) {
-    await productStore.fetchProducts()
-  }
-})
+//   if (!productStore.products.length) {
+//     await productStore.fetchProducts()
+//   }
+// })
 
 
 watch(

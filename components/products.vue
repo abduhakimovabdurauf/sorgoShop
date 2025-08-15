@@ -6,14 +6,19 @@
           <NuxtLink :to="`/slug/${product.id}`">
             <div class="relative h-56 flex items-center border border-gray-500 justify-center p-4">
               <NuxtImg
-                :src="product.images[0]"
+                v-if="product?.images"
+                :src="product.images"
                 :alt="product.name[locale]"
                 class="max-h-full max-w-full object-contain"
               />
-              <div v-if="!product.images" class="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400 text-sm">
+              <div
+                v-else
+                class="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400 text-sm"
+              >
                 No Image
               </div>
             </div>
+
             <div class="p-4 bg-gray-50 mt-3 h-30">
               <h3 class="text-md font-semibold text-gray-800 mb-1 leading-tight">
                 {{ product.name[locale] }}

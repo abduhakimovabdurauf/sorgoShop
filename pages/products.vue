@@ -23,15 +23,15 @@
            <NuxtLink :to="`/slug/${product.id}`">
                 <div class="relative h-56 flex items-center border border-gray-500 justify-center p-4">
                     <NuxtImg
-                    :src="product?.images[0] || '/default-image.jpg'"
+                    :src="product?.images || '/default-image.jpg'"
                     :alt="product.name"
                     class="max-h-full max-w-full object-contain"
                     />
                     <div
-                    v-if="!product.images.length"
-                    class="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400 text-sm"
-                    >
-                    No Image
+                      v-if="!product.images"
+                      class="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400 text-sm"
+                      >
+                      No Image
                     </div>
                 </div>
                 <div class="p-4 bg-gray-50 mt-3 h-30">

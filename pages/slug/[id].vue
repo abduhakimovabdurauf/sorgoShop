@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="w-full lg:w-1/2 p-6 md:p-8 lg:p-10 flex items-center justify-center bg-gray-50">
-        <NuxtImg :src="product?.images[0]" alt="Product Image" class="max-w-full h-auto" />
+        <NuxtImg :src="product?.images" alt="Product Image" class="max-w-full h-auto" />
       </div>
     </div>
 
@@ -78,10 +78,10 @@ const { locale } = useI18n()
 const route = useRoute()
 const productStore = useProductStore()
 const cartStore = useCartStore()
-const product = computed(() => productStore.getProductById(Number(route.params.id)))
+const product = computed(() => productStore.getProductById(route.params.id))
 console.log(route.params.id);
-console.log(product.value);
 console.log('mahsulotlar: ',productStore.products);
+console.log(product.value);
 
 const quantity = ref(1)
 const increase = () => quantity.value++
