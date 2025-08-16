@@ -8,7 +8,7 @@
               <NuxtImg
                 v-if="product?.images"
                 :src="product.images"
-                :alt="product.name[locale]"
+                :alt="product.name"
                 class="max-h-full max-w-full object-contain"
               />
               <div
@@ -21,10 +21,10 @@
 
             <div class="p-4 bg-gray-50 mt-3 h-30">
               <h3 class="text-md font-semibold text-gray-800 mb-1 leading-tight">
-                {{ product.name[locale] }}
+                {{ product.name }}
               </h3>
               <p class="text-gray-600 text-sm leading-snug">
-                {{ product.description[locale] }}
+                {{ product.description }}
               </p>
             </div>
           </NuxtLink>
@@ -71,6 +71,8 @@ const translatedProducts = computed(() =>
     description: product.description[locale.value]
   }))
 )
+console.log('filteredProducts: ',translatedProducts.value);
+
 </script>
 
 <style scoped>
