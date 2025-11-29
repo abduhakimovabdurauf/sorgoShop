@@ -121,7 +121,8 @@ export default defineI18nConfig(() => ({
         commonContact: "Umumiy aloqa",
         generalDirector: "Muhammad Bobur — Bosh direktor",
         manager: "Usmonxonov Xojiakbar - Manager",
-      }
+      },
+      addToCart: "Savatchaga qo'shish"
 
     },
     ru: {
@@ -240,7 +241,8 @@ export default defineI18nConfig(() => ({
         commonContact: "Общая связь",
         generalDirector: "Мухаммад Бобур — генеральный директор",
         manager: "Усмонхонов Ходжиакбар - менеджер",
-      }
+      },
+      addToCart: "Добавить в корзину"
 
 
 
@@ -361,7 +363,8 @@ export default defineI18nConfig(() => ({
         commonContact: "Common Contact",
         generalDirector: "Muhammad Bobur — General Director",
         manager: "Usmonxonov Xojiakbar - Manager",
-      }
+      },
+      addToCart: "Add to Cart"
     }
   }
 }))
